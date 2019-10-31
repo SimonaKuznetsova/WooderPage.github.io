@@ -1,0 +1,25 @@
+.about-us{
+    padding-top: 80px;
+     .main__text{
+        text-align: left;
+     }
+     .main__title-line{
+        transform: translate(-210px, -50px);
+     }
+     .main__picture img{
+        width: 445px;
+    }
+    .main__p-line{
+        width: 50px;
+        transform: translate(-100px, -95px);
+    }
+    .main__learn-more{
+        justify-content: flex-start;
+    }
+    .main__more-line{
+        transform: translateX(0px);
+    }
+    .main__second{
+        padding-top: 0;
+    }
+}

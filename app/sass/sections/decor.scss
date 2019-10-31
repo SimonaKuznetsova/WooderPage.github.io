@@ -1,0 +1,66 @@
+.letter{
+    color: $gold-color;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 2;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.letter_f{
+    font-size: 300px;
+    transform: translate(-210px, -330px);
+}
+
+.letter_d{
+    font-size: 300px;
+    transform: translate(0px, -280px);
+}
+
+.letter_a{
+    font-size: 300px;
+    transform: translate(250px, -280px);
+}
+
+.letter_a-word{
+    font-size: 110px;
+    transform: translate(-800px, 25px);
+    text-overflow: clip;
+}
+
+.letter_f-word{
+    font-size: 110px;
+    transform: translate(450px, 25px);
+    text-overflow: clip;
+}
+
+.letter_d-word{
+    font-size: 110px;
+    transform: translate(-1050px, 25px);
+}
+
+.number{
+    position: absolute;
+    bottom: 0;
+    font-size: 36px;
+    &__point{
+        color: $gold-color;
+    }
+    &_one{
+        transform: translateX(-550px);
+    }
+    &_two{
+        transform: translateX(1050px);
+    }
+}
+
+.deg90_numb{
+    position: absolute;
+    transform: rotate(90deg);
+    .decor-line_numb-one{
+        transform: translate(75px, 555px);
+    }
+    .decor-line_numb-two{
+        transform: translate(70px, -1050px);
+    }
+}

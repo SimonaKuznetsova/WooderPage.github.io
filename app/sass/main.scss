@@ -1,0 +1,24 @@
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+@import "base/reset";
+@import "sections/mixins";
+@import "sections/variables";
+@import "sections/general";
+@import "sections/fonts";
+@import "sections/buttons";
+@import "node_modules/hamburgers/dist/hamburgers";
+@import "sections/hamburger";
+@import "sections/decor";
+
+
+
+//Блоки
+@import "sections/header";
+@import "sections/page-main";
+@import "sections/advantages";
+@import "sections/profy";
+@import "sections/about-us";
+@import "sections/footer";
+
+
+//_media
+@import "base/_media";

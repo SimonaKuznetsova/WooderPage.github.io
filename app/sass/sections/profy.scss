@@ -1,0 +1,35 @@
+.profy{
+    background-image: url('../img/bg-black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    padding: 70px 0;
+    .profy__border{
+        border: 1px solid $gold-color;
+        padding: 120px 0;
+        margin: 0 70px;
+    }
+}
+
+.profy__title{
+    color: $gold-color;
+    line-height: 40px;
+    letter-spacing: 3px;
+}
+
+.profy__p{
+    color: white;
+    line-height: 25px;
+    display: inline-block;
+    max-width: 400px;
+}
+
+.profy__title-line{
+    background-color: #ffffff;
+    width: 150px;
+    transform: translate(-180px, 10px);
+}
+.profy__p-line{
+    width: 50px;
+    transform: translate(-80px, 0px);
+}

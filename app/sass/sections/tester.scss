@@ -1,0 +1,290 @@
+//Миксины. Временно тут
+@mixin uppercase {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+body {
+  font-family: "ProxomaNova-Bold", sans-serif;
+}
+
+.header {
+  //   height: 1046px;
+  padding-bottom: 120px;
+  background-image: url(../img/header-background@x1.png);
+  background-size: cover;
+  background-position: center 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+// .header__wrapper {
+//   max-width: 1140px;
+//   height: 100%;
+
+//   margin-right: auto;
+//   margin-left: auto;
+
+// }
+
+@media (min-resolution: 1.5dppx) {
+  .header__wrapper {
+    background-image: url(../img/header-background@x2.png);
+  }
+}
+
+// .container__top {
+//   margin-bottom: 241px;
+//   padding-top: 33px;
+// }
+
+.container {
+  &_mb240px {
+    margin-bottom: 240px;
+  }
+
+  &_pt30px {
+    padding-top: 30px;
+  }
+}
+
+.header__menu-button {
+  display: block;
+  position: relative;
+  z-index: 2;
+
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+    left: 2px;
+
+    width: 33px;
+    height: 1px;
+
+    background-color: #bea67c;
+    box-shadow: 0 11px 0 0 #bea67c, 0 22px 0 0 #bea67c;
+  }
+}
+
+// .visually-hidden:not(:focus):not(:active) {
+//   position: absolute;
+
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   padding: 0;
+//   border: 0;
+
+//   white-space: nowrap;
+
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
+
+// .header__nav_closed .header__nav_toggle
+//Временно тут
+a {
+  text-decoration: none;
+}
+//временно тут - конец
+
+.header__link {
+  @include text-upper;
+  opacity: 0.5;
+
+  font-size: 15px;
+  line-height: 27px;
+
+  &_ml50px {
+    margin-left: 50px;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  position: relative;
+
+  @include text-upper;
+  font-size: 36px;
+  letter-spacing: 7px;
+
+  &-line {
+    position: absolute;
+    left: 43px;
+    top: -3px;
+    width: 60px;
+    height: 4px;
+
+    border: none;
+    background-color: #bea67c;
+  }
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+// .container__middle {
+//   height: 600px;
+//   white-space: nowrap;
+// }
+
+.header__slides-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+  //   margin-top: 120px;
+}
+
+.header__page-number,
+.header__point {
+  display: block;
+  font-size: 52px;
+  color: #bea67c;
+  font-weight: bold;
+  letter-spacing: 5px;
+
+  margin-right: 60px;
+}
+
+.decor-line {
+  height: 4px;
+  width: 51px;
+  border: none;
+  background-color: #bea67c;
+}
+
+.header__point {
+  display: inline-block;
+  font-size: 35px;
+  margin-right: 35px;
+
+  color: #303030;
+}
+
+.header__page-number + .header__point {
+  color: #bea67c;
+}
+
+.decor-rotate {
+  transform: rotate(90deg);
+}
+
+.container__middle_pages {
+  margin-top: 175px;
+}
+
+.container__middle_pages .decor-line {
+  position: relative;
+  right: 240px;
+  top: 40px;
+}
+
+// .header__col-flexbox {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+// }
+
+.header__title {
+  @include text-upper;
+  font-size: 80px;
+  color: #bea67c;
+  letter-spacing: 12px;
+  margin: 0;
+
+  margin-bottom: 55px;
+}
+
+// .container__middle_company {
+//   margin-left: -50px;
+// }
+
+// .container__middle_company button img {
+//   margin-left: 10px;
+//   margin-top: 2px;
+//   position: absolute;
+// }
+
+.img-mouse {
+  margin-top: 68px;
+}
+
+.img-arrow {
+  margin-left: 4px;
+  margin-top: 23px;
+}
+
+.header__scroll_text {
+  @include text-upper;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.1;
+  letter-spacing: 5px;
+
+  margin-top: 80px;
+  margin-left: -35px;
+}
+
+.header__decor_text {
+  display: block;
+  @include text-upper;
+  font-size: 12px;
+  letter-spacing: 7px;
+  color: #bea67c;
+  opacity: 0.2;
+  margin-top: 170px;
+}
+
+.container__decor .decor-line {
+  position: absolute;
+  left: 705px;
+  bottom: 700px;
+}
+
+.container__decor {
+  margin-top: -215px;
+  margin-left: -230px;
+}
+
+select {
+  @include text-upper;
+  width: 36px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../img/arrow-lang.png);
+  background-color: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-position: right center;
+  border: none;
+
+  padding: 0;
+  margin-left: 20px;
+}
+
+.share {
+  position: absolute;
+  top: 700px;
+  right: -310px;
+}
